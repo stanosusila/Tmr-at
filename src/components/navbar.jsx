@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full h-20 shadow-xl z-[100]">
+    <nav className="fixed w-full h-20 shadow-xl z-[100] bg-slate-50 ">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/../public/assets/logo.png"
@@ -46,9 +46,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={
-          open ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
-        }
+        className={open ? "md:hidden fixed left-0 top-0 w-full h-screen" : ""}
       >
         <div
           className={
