@@ -46,7 +46,9 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={open ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          open ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
