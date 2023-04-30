@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import LogoImg from "../../public/assets/logo.png";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { useState } from "react";
@@ -15,12 +16,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full h-20 shadow-xl z-[100] bg-slate-50 ">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/logo.png"
-          width={80}
-          height={80}
-          alt="logo"
-        />
+        <Image src={LogoImg} width={80} height={80} alt="logo" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
