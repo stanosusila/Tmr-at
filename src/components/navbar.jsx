@@ -24,18 +24,22 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Domov</li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">O nás</li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projekty
+              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5]">
+                Domov
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5]">
+                O nás
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5] ">
+                Renovácie
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5]">
                 Kontakt
               </li>
             </Link>
@@ -83,7 +87,7 @@ const Navbar = () => {
                 <li className="py-4 text-sm">O nás</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Projekty</li>
+                <li className="py-4 text-sm">Renovácie</li>
               </Link>
               <Link href="/">
                 <li className="py-4 text-sm">Kontakt</li>
