@@ -4,17 +4,36 @@ import Link from "next/link";
 import LogoImg from "../../public/assets/logo.png";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed w-full h-20 shadow-xl z-[100] bg-slate-50 ">
+    <nav
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-50 "
+          : "fixed w-full h-20 z-[100] bg-slate-50 "
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src={LogoImg}
@@ -23,8 +42,9 @@ const Navbar = () => {
           alt="logo"
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -72,8 +92,9 @@ const Navbar = () => {
                 alt="logo"
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 onClick={handleOpen}
