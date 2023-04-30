@@ -14,14 +14,15 @@ const Main = () => {
   return (
     <div className="w-full h-screen text-center">
       <Image
-        src="/../public/assets/background.jpg"
+        src={backgroundImg}
         alt="main"
         className="absolute z-[-1]"
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover"
-        }} />
+          objectFit: "cover",
+        }}
+      />
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center bg-gray-950 bg-opacity-20">
         <div className="mt-auto">
