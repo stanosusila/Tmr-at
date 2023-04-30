@@ -24,22 +24,22 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 Domov
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 O nás
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5] ">
+              <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5] ">
                 Renovácie
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:scale-105 ease-in duration-300 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 Kontakt
               </li>
             </Link>

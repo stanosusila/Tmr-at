@@ -35,16 +35,16 @@ const Main = () => {
             quibusdam, quia, quae voluptates voluptate quod voluptatibus quos
           </p>
           <div className=" flex items-center justify-between max-w-[330px] m-auto py-4 ">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 bg-slate-50">
+            <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
               <FaLinkedinIn />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 bg-slate-50">
+            <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
               <AiOutlineMail />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 bg-slate-50">
+            <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
               <FaFacebookF />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 bg-slate-50">
+            <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
               <FaInstagram />
             </div>
           </div>
@@ -52,7 +52,7 @@ const Main = () => {
         <div className="mt-auto">
           <FaArrowCircleDown
             size={30}
-            className="animate-bounce text-slate-50 shadow-gray-400 shadow-lg rounded-full cursor-pointer hover:scale-105 hover:s ease-in duration-300"
+            className="animate-bounce text-slate-50 shadow-black shadow-lg rounded-full cursor-pointer hover:scale-105 hover:s ease-in duration-300"
           />
         </div>
       </div>
