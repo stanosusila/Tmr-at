@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import aboutImg from "../../public/assets/logo.png";
 
 const About = () => {
   return (
@@ -26,7 +27,7 @@ const About = () => {
         </div>
         <div className=" flex items-center justify-center hover:scale-105 ease-in duration-300">
           <Image
-            src="/../public/assets/logo.png"
+            src={aboutImg}
             width={200}
             height={200}
             alt="main"
