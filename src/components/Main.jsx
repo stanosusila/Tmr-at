@@ -25,7 +25,7 @@ const Main = () => {
       />
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center bg-gray-950 bg-opacity-20">
-        <div className="mt-auto">
+        <div>
           <p className="uppercase text-sm tracking-widest text-slate-300">
             Xd zrestaurujte s nami motorku xdxd daco take
           </p>
@@ -52,12 +52,6 @@ const Main = () => {
               <FaInstagram />
             </div>
           </div>
-        </div>
-        <div className="mt-auto">
-          <FaArrowCircleDown
-            size={30}
-            className="animate-bounce text-slate-50 shadow-black shadow-lg rounded-full cursor-pointer hover:scale-105 hover:s ease-in duration-300"
-          />
         </div>
       </div>
     </div>
