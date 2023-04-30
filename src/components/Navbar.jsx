@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import LogoImg from "../../public/assets/logo.png";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -16,7 +16,15 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full h-20 shadow-xl z-[100] bg-slate-50 ">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src={LogoImg} width={80} height={80} alt="logo" />
+        <Image
+          src={LogoImg}
+          width={80}
+          height={80}
+          alt="logo"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -62,7 +70,10 @@ const Navbar = () => {
                 width={80}
                 height={80}
                 alt="logo"
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 onClick={handleOpen}

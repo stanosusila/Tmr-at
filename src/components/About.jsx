@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import aboutImg from "../../public/assets/logo.png";
 
 const About = () => {
@@ -32,7 +32,10 @@ const About = () => {
             height={200}
             alt="main"
             className=""
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
       </div>
     </div>

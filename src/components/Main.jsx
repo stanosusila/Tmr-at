@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import backgroundImg from "../../public/assets/background.jpg";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -15,11 +15,13 @@ const Main = () => {
     <div className="w-full h-screen text-center">
       <Image
         src="/../public/assets/background.jpg"
-        layout="fill"
-        objectFit="cover"
         alt="main"
         className="absolute z-[-1]"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center bg-gray-950 bg-opacity-20">
         <div className="mt-auto">
