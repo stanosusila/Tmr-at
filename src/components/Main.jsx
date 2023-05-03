@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import backgroundImg from "../../public/assets/background.jpg";
+import backgroundImg from "../../public/assets/perak.jpg";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import {
   FaInstagram,
@@ -12,11 +12,11 @@ import {
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div className="w-full h-screen text-center bg-gray-950 bg-opacity-30">
       <Image
         src={backgroundImg}
         alt="main"
-        className="absolute z-[-1]"
+        className="absolute z-[-1] "
         fill
         sizes="100vw"
         style={{
@@ -24,15 +24,15 @@ const Main = () => {
         }}
       />
 
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center bg-gray-950 bg-opacity-20">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-slate-300">
+          <p className="uppercase text-sm tracking-widest text-slate-50">
             Xd zrestaurujte s nami motorku xdxd daco take
           </p>
-          <h1 className="text-4xl font-bold py-4 text-slate-200 ">
-            Vitajte v <span className=" text-[#5651e5] ">RTM</span>
+          <h1 className="text-4xl font-bold py-4 text-slate-50 ">
+            Vitajte v <span className=" text-red-600 ">RTM</span>
           </h1>
-          <p className="text-slate-200 py-4 max-w-[70%] m-auto">
+          <p className="text-slate-50 py-4 max-w-[70%] m-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptatum, quibusdam, quia, quae voluptates voluptate quod
             voluptatibus quos doloribus quidem voluptas. Quisquam voluptatum,

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import LogoImg from "../../public/assets/logo.png";
+import LogoImg from "../../public/assets/logo_transparent.png";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { useState, useEffect } from "react";
@@ -35,18 +35,25 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src={LogoImg}
-          width={80}
-          height={80}
-          alt="logo"
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-          }}
-        />
+        <div className="flex items-center">
+          <Image
+            src={LogoImg}
+            width={80}
+            height={80}
+            alt="logo"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
+            className="user-select-none"
+          />
+          <p className="ml-4">
+            TMR <span className="italic">Ateliér</span>
+          </p>
+        </div>
+
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex font-bold">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 Domov
@@ -94,6 +101,7 @@ const Navbar = () => {
                   maxWidth: "100%",
                   height: "auto",
                 }}
+                className="user-select-none"
               />
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"

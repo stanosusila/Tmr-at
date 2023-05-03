@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import placeholderIMG from "../../public/assets/background.jpg";
+import p1Img from "../../public/assets/IMG_4550.jpg";
+import p2Img from "../../public/assets/IMG_6265.jpg";
+import p3Img from "../../public/assets/IMG_7207done.jpeg";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -15,19 +18,19 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="CZ skoprion"
-            backgroundImg={placeholderIMG}
+            backgroundImg={p1Img}
             projectUrl="/property"
             description="Kompletna renovacia"
           />
           <ProjectItem
             title="Jawa 69xd special"
-            backgroundImg={placeholderIMG}
+            backgroundImg={p2Img}
             projectUrl="/property"
             description="Kompletna renovacia"
           />
           <ProjectItem
             title="xdxdxd"
-            backgroundImg={placeholderIMG}
+            backgroundImg={p3Img}
             projectUrl="/property"
             description="Kompletna renovacia"
           />
