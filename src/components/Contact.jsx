@@ -10,23 +10,37 @@ const Contact = () => {
   return (
     <div className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="uppercase text-2xl tracking-widest text-[#F33535] ">
+        <p className="uppercase text-2xl md:text-3xl tracking-widest text-[#F33535] mb-4">
           Kontakt
         </p>
-        <h2 className="py-4">Ozvite sa</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full flex flex-col">
               <div>
-                <Image
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d517.6580093341727!2d18.489385718018035!3d48.80599019617406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714c3d5d923e99d%3A0x16b8515e4b2202f8!2sTMR%20Ateli%C3%A9r!5e0!3m2!1sen!2ssk!4v1683200253019!5m2!1sen!2ssk"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+                {/*<Image
                   src={placeholderIMG}
                   alt="contact"
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                />
+                />*/}
               </div>
               <div>
-                <h2 className="py-2">RTM</h2>
-                <p>Blablabdbadf xdxdxdx sgaimopd</p>
+                <h2 className="py-4 text-2xl">Adresa:</h2>
+                <div className="font-bold flex flex-col items-center justify-center">
+                  <p className="my-1">Kostolná Ves 334</p>
+                  <p className="my-1">972 26 Nitrianske Rudno</p>
+                  <p className="my-1">Radovan Trepáč</p>
+                  <p className="my-1">0948 955 389</p>
+                </div>
               </div>
               <div className="mt-auto">
                 <p className="uppercase pt-8">Spojte sa s nami</p>
@@ -50,33 +64,18 @@ const Contact = () => {
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form>
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Meno</label>
-                    <input
-                      type="text"
-                      className="border-2 border-gray-300 rounded-lg p-3"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Tel. Číslo</label>
-                    <input
-                      type="text"
-                      className="border-2 flex border-gray-300 rounded-lg p-3"
-                    />
-                  </div>
+                <div className="flex flex-col">
+                  <label className="uppercase text-sm py-2">Meno</label>
+                  <input
+                    type="text"
+                    className="border-2 border-gray-300 rounded-lg p-3"
+                  />
                 </div>
+
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
                     type="email"
-                    className="border-2 flex border-gray-300 rounded-lg p-3"
-                  />
-                </div>
-                <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Predmet</label>
-                  <input
-                    type="text"
                     className="border-2 flex border-gray-300 rounded-lg p-3"
                   />
                 </div>

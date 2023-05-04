@@ -29,8 +29,8 @@ const Main = () => {
           <p className="uppercase tracking-widest text-slate-50">
             ZACHRAŇUJEME MINULOSŤ PRE BUDÚCNOSŤ
           </p>
-          <h1 className="text-5xl my-6 font-bold py-4 text-slate-50 font-unbounded ">
-            TMR <span className="font-dancing ">ateliér</span>
+          <h1 className="text-5xl my-6 font-bold py-4 text-[#F33535] font-unbounded ">
+            TMR <span className="font-dancing text-slate-50">ateliér</span>
           </h1>
           <p className="text-slate-50 text-lg py-4 max-w-[70%] m-auto">
             V našom ateliéri sa zameriavame na renováciu a obnovu historických

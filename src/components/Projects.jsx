@@ -24,15 +24,15 @@ const Projects = () => {
   return (
     <div className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="uppercase mb-4 text-2xl tracking-widest text-[#F33535] ">
+        <p className="uppercase mb-4 text-2xl md:text-3xl tracking-widest text-[#F33535] ">
           Renovácie
         </p>
         <Slider {...settings}>
           <ProjectItem
-            title="CZ skoprion"
+            title="Jawa 350"
             backgroundImg={p1Img}
             projectUrl="/property"
-            description="Kompletna renovacia"
+            description="1960"
           />
           <ProjectItem
             title="Jawa 69xd special"
