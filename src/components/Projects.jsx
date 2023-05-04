@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import placeholderIMG from "../../public/assets/background.jpg";
-import p1Img from "../../public/assets/IMG_4550.jpg";
-import p2Img from "../../public/assets/IMG_6265.jpg";
-import p3Img from "../../public/assets/IMG_7207done.jpeg";
+import p1Img from "../../public/assets/IMG_4550.JPG";
+import p2Img from "../../public/assets/IMG_6265.JPG";
+import p3Img from "../../public/assets/IMG_7207done.JPEG";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
