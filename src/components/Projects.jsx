@@ -35,22 +35,16 @@ const Projects = () => {
             description="1960"
           />
           <ProjectItem
-            title="Jawa 69xd special"
+            title="Jawa 250 typ 11"
             backgroundImg={p2Img}
             projectUrl="/property"
-            description="Kompletna renovacia"
+            description="1950"
           />
           <ProjectItem
-            title="xdxdxd"
+            title="ČZ 150C"
             backgroundImg={p3Img}
             projectUrl="/property"
-            description="Kompletna renovacia"
-          />
-          <ProjectItem
-            title="BMW x5"
-            backgroundImg={placeholderIMG}
-            projectUrl="/property"
-            description="Kompletna renovacia"
+            description="1951"
           />
         </Slider>
       </div>
