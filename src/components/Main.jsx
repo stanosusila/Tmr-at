@@ -27,16 +27,16 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-slate-50">
-            Xd zrestaurujte s nami motorku xdxd daco take
+            ZACHRAŇUJEME MINULOSŤ PRE BUDÚCNOSŤ
           </p>
           <h1 className="text-4xl font-bold py-4 text-slate-50 ">
             Vitajte v <span className=" text-red-600 ">RTM</span>
           </h1>
           <p className="text-slate-50 py-4 max-w-[70%] m-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptates voluptate quod
-            voluptatibus quos doloribus quidem voluptas. Quisquam voluptatum,
-            quibusdam, quia, quae voluptates voluptate quod voluptatibus quos
+            V našom ateliéri sa zameriavame na renováciu a obnovu historických
+            vozidiel. Sme nadšenci do historických áut a motocyklov a naším
+            cieľom je priniesť im nový život, zachovať ich unikátny charakter a
+            históriu pre budúce generácie.
           </p>
           <div className=" flex items-center justify-between max-w-[330px] m-auto py-4 ">
             <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
