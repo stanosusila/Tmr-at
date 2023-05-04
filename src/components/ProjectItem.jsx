@@ -10,9 +10,9 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, description }) => {
         src={backgroundImg}
         alt="main"
         style={{
-          width: "500px",
-          height: "400px",
           objectFit: "cover",
+          width: "40rem",
+          height: "30rem",
         }}
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

@@ -26,13 +26,13 @@ const Main = () => {
 
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-slate-50">
+          <p className="uppercase tracking-widest text-slate-50">
             ZACHRAŇUJEME MINULOSŤ PRE BUDÚCNOSŤ
           </p>
-          <h1 className="text-4xl font-bold py-4 text-slate-50 ">
-            Vitajte v <span className=" text-red-600 ">RTM</span>
+          <h1 className="text-5xl my-6 font-bold py-4 text-slate-50 font-unbounded ">
+            TMR <span className="font-dancing ">ateliér</span>
           </h1>
-          <p className="text-slate-50 py-4 max-w-[70%] m-auto">
+          <p className="text-slate-50 text-lg py-4 max-w-[70%] m-auto">
             V našom ateliéri sa zameriavame na renováciu a obnovu historických
             vozidiel. Sme nadšenci do historických áut a motocyklov a naším
             cieľom je priniesť im nový život, zachovať ich unikátny charakter a
