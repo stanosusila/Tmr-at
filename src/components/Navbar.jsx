@@ -47,8 +47,8 @@ const Navbar = () => {
             }}
             className="user-select-none"
           />
-          <p className="ml-4">
-            TMR <span className="italic">Ateliér</span>
+          <p className="ml-4 text-xl font-bold font-unbounded">
+            TMR <span className="font-dancing">ateliér</span>
           </p>
         </div>
 
