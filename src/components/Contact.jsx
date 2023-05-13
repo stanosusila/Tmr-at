@@ -13,8 +13,8 @@ const Contact = () => {
         <p className="uppercase pt-6 text-2xl md:text-3xl tracking-widest text-[#F33535] mb-4">
           Kontakt
         </p>
-        <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="lg:grid lg:grid-cols-5 gap-8">
+          <div className="col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full flex flex-col">
               <div>
                 <iframe
@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-            <div className="m-4">
+            <div className="m-4 w-screen">
               <form>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Meno</label>
