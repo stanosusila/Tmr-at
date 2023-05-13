@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="w-full h-screen text-center bg-gray-950 bg-opacity-30"
+      className="w-full h-screen text-center bg-gray-950 bg-opacity-30 overflow-hidden"
     >
       <Image
         src={backgroundImg}

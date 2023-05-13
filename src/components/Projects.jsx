@@ -29,7 +29,7 @@ const Projects = () => {
           Renovácie
         </p>
         <div className="flex items-center justify-center">
-          <Slider {...settings} className="md:w-full w-11/12 ">
+          <Slider {...settings} className="md:w-full w-11/12 overflow-hidden">
             <ProjectItem
               title="Jawa 350"
               backgroundImg={p1Img}
