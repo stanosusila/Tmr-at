@@ -116,16 +116,16 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col py-4">
             <ul className="uppercase">
-              <Link href="/#main" scroll={false}>
+              <Link href="/#main" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">Domov</li>
               </Link>
-              <Link href="/#about" scroll={false}>
+              <Link href="/#about" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">O nás</li>
               </Link>
-              <Link href="/#projects" scroll={false}>
+              <Link href="/#projects" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">Renovácie</li>
               </Link>
-              <Link href="/#contact" scroll={false}>
+              <Link href="/#contact" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">Kontakt</li>
               </Link>
             </ul>
