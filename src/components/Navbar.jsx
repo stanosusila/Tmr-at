@@ -138,13 +138,17 @@ const Navbar = () => {
                   <FaLinkedinIn />
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <Link href="mailto: info@tmratelier.sk">
+                    <AiOutlineMail />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaFacebookF />
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaInstagram />
+                  <Link href="https://www.instagram.com/tmrrestorations/">
+                    <FaInstagram />
+                  </Link>
                 </div>
               </div>
             </div>
