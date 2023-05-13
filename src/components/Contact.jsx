@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-            <div className="m-4 w-screen">
+            <div className="m-4">
               <form>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Meno</label>
@@ -91,7 +91,7 @@ const Contact = () => {
                     rows={10}
                   />
                 </div>
-                <button className="w-full mt-4 p-4 text-gray-100 bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+                <button className="w-full my-4 p-4 text-gray-100 bg-gradient-to-r from-[#5651e5] to-[#709dff]">
                   Odoslať
                 </button>
               </form>
