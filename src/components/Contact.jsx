@@ -49,13 +49,17 @@ const Contact = () => {
                     <FaLinkedinIn />
                   </div>
                   <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
-                    <AiOutlineMail />
+                    <Link href="mailto: info@tmratelier.sk">
+                      <AiOutlineMail />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
                     <FaFacebookF />
                   </div>
                   <div className="rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
-                    <FaInstagram />
+                    <Link href="https://www.instagram.com/tmrrestorations/">
+                      <FaInstagram />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -95,7 +99,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="">
+          <Link href="\#main" scroll={false}>
             <div className="rounded-full shadow-lg shadow-black p-4 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
