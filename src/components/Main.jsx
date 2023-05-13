@@ -27,7 +27,7 @@ const Main = () => {
         }}
       />
 
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto mt-12 flex flex-col justify-center items-center">
         <div>
           <p className="uppercase tracking-widest text-slate-50">
             ZACHRAŇUJEME MINULOSŤ PRE BUDÚCNOSŤ
