@@ -19,7 +19,7 @@ const Main = () => {
       <Image
         src={backgroundImg}
         alt="main"
-        className="absolute z-[-1]"
+        className="absolute h-screen z-[-1]"
         fill
         sizes="100vw"
         style={{
