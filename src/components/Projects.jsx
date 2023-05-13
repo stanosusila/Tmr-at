@@ -27,26 +27,28 @@ const Projects = () => {
         <p className="uppercase pt-6 mb-4 text-2xl md:text-3xl tracking-widest text-[#F33535] ">
           Renovácie
         </p>
-        <Slider {...settings}>
-          <ProjectItem
-            title="Jawa 350"
-            backgroundImg={p1Img}
-            projectUrl="/property"
-            description="1960"
-          />
-          <ProjectItem
-            title="Jawa 250 typ 11"
-            backgroundImg={p2Img}
-            projectUrl="/property"
-            description="1950"
-          />
-          <ProjectItem
-            title="ČZ 150C"
-            backgroundImg={p3Img}
-            projectUrl="/property"
-            description="1951"
-          />
-        </Slider>
+        <div className="flex items-center justify-center">
+          <Slider {...settings} className="md:w-full w-11/12 ">
+            <ProjectItem
+              title="Jawa 350"
+              backgroundImg={p1Img}
+              projectUrl="/property"
+              description="1960"
+            />
+            <ProjectItem
+              title="Jawa 250 typ 11"
+              backgroundImg={p2Img}
+              projectUrl="/property"
+              description="1950"
+            />
+            <ProjectItem
+              title="ČZ 150C"
+              backgroundImg={p3Img}
+              projectUrl="/property"
+              description="1951"
+            />
+          </Slider>
+        </div>
       </div>
     </div>
   );
