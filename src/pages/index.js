@@ -7,12 +7,8 @@ import Contact from "@/components/Contact.jsx";
 
 export default function Home() {
   if (typeof window !== "undefined") {
-
-    window.addEventListener("resize", () => {
-      let vh = window.innerHeight * 0.01;
+    let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-    });
-
   }
   return (
     <>

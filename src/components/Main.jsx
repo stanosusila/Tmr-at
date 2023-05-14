@@ -35,7 +35,7 @@ const Main = () => {
           <h1 className="text-5xl py-10 font-bold text-[#F33535] font-unbounded ">
             TMR <span className="font-dancing text-slate-50">ateliér</span>
           </h1>
-          <p className="text-slate-50 text-lg py-4 max-w-[70%] m-auto">
+          <p className="text-slate-50 text-sm md:text-lg py-4 max-w-[70%] m-auto">
             V našom ateliéri sa zameriavame na renováciu a obnovu historických
             vozidiel. Sme nadšenci do historických áut a motocyklov a naším
             cieľom je priniesť im nový život, zachovať ich unikátny charakter a
