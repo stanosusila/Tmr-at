@@ -11,8 +11,8 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, description }) => {
         alt="main"
         style={{
           objectFit: "cover",
-          width: "40rem",
-          height: "30rem",
+          width: "100%",
+          height: "75vh",
         }}
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

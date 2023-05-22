@@ -19,72 +19,39 @@ const Projects = () => {
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="uppercase mb-4 text-2xl md:text-3xl tracking-widest text-[#F33535] ">
+        <p className="uppercase pt-6 mb-4 text-2xl md:text-3xl tracking-widest text-[#F33535] ">
           Renovácie
         </p>
-        <Slider {...settings}>
-          <ProjectItem
-            title="Jawa 350"
-            backgroundImg={p1Img}
-            projectUrl="/property"
-            description="1960"
-          />
-          <ProjectItem
-            title="Jawa 250 typ 11"
-            backgroundImg={p2Img}
-            projectUrl="/property"
-            description="1950"
-          />
-          <ProjectItem
-            title="ČZ 150C"
-            backgroundImg={p3Img}
-            projectUrl="/property"
-            description="1951"
-          />
-        </Slider>
-      </div>
-    </div>
-
-    /* <div className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="uppercase text-2xl tracking-widest text-[#5651e5] ">
-          Renovácie
-        </p>
-        <h2 className="py-4">XDXD nieco si sem vymysli</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="CZ skoprion"
-            backgroundImg={p1Img}
-            projectUrl="/property"
-            description="Kompletna renovacia"
-          />
-          <ProjectItem
-            title="Jawa 69xd special"
-            backgroundImg={p2Img}
-            projectUrl="/property"
-            description="Kompletna renovacia"
-          />
-          <ProjectItem
-            title="xdxdxd"
-            backgroundImg={p3Img}
-            projectUrl="/property"
-            description="Kompletna renovacia"
-          />
-          <ProjectItem
-            title="BMW x5"
-            backgroundImg={placeholderIMG}
-            projectUrl="/property"
-            description="Kompletna renovacia"
-          />
+        <div className="flex items-center justify-center">
+          <Slider {...settings} className="md:w-full w-11/12 overflow-hidden">
+            <ProjectItem
+              title="Jawa 350"
+              backgroundImg={p1Img}
+              projectUrl="/property"
+              description="1960"
+            />
+            <ProjectItem
+              title="Jawa 250 typ 11"
+              backgroundImg={p2Img}
+              projectUrl="/property"
+              description="1950"
+            />
+            <ProjectItem
+              title="ČZ 150C"
+              backgroundImg={p3Img}
+              projectUrl="/property"
+              description="1951"
+            />
+          </Slider>
         </div>
       </div>
     </div>
-    */
   );
 };
 

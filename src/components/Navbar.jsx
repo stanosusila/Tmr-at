@@ -54,22 +54,22 @@ const Navbar = () => {
 
         <div>
           <ul className="hidden md:flex font-bold">
-            <Link href="/">
+            <Link href="/#main" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 Domov
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#about" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 O nás
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5] ">
                 Renovácie
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:scale-125 ease-in duration-300 hover:text-[#5651e5]">
                 Kontakt
               </li>
@@ -116,16 +116,16 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col py-4">
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/#main" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">Domov</li>
               </Link>
-              <Link href="/">
+              <Link href="/#about" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">O nás</li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">Renovácie</li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact" scroll={false} onClick={handleOpen}>
                 <li className="py-4 text-sm">Kontakt</li>
               </Link>
             </ul>
@@ -138,13 +138,17 @@ const Navbar = () => {
                   <FaLinkedinIn />
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <Link href="mailto: info@tmratelier.sk">
+                    <AiOutlineMail />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaFacebookF />
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaInstagram />
+                  <Link href="https://www.instagram.com/tmrrestorations/">
+                    <FaInstagram />
+                  </Link>
                 </div>
               </div>
             </div>
