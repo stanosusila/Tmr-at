@@ -7,6 +7,34 @@ import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  function handleChange(e) {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+    console.log(formData);
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault(); 
+    const res = await fetch("/api/mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    const result = await res.json();
+    console.log(result);
+    
+  }
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -67,31 +95,37 @@ const Contact = () => {
           </div>
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="m-4">
-              <form>
+              <form method="post" id="contactForm" >
                 <div className="flex flex-col">
-                  <label className="uppercase text-sm py-2">Meno</label>
+                  <label className="uppercase text-sm py-2" htmlFor="name">Meno</label>
                   <input
                     type="text"
+                    id="name"
                     className="border-2 border-gray-300 rounded-lg p-3"
+                    onInput={handleChange}
                   />
                 </div>
 
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label className="uppercase text-sm py-2" htmlFor="email">Email</label>
                   <input
                     type="email"
+                    id="email"
                     className="border-2 flex border-gray-300 rounded-lg p-3"
+                    onInput={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Správa</label>
+                  <label className="uppercase text-sm py-2" htmlFor="message">Správa</label>
                   <textarea
                     type="text"
                     className="border-2 border-gray-300 rounded-lg p-3 "
                     rows={10}
+                    id="message"
+                    onInput={handleChange}
                   />
                 </div>
-                <button className="w-full my-4 p-4 text-gray-100 bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+                <button className="w-full my-4 p-4 text-gray-100 bg-gradient-to-r from-[#5651e5] to-[#709dff]" onClick={handleSubmit} >
                   Odoslať
                 </button>
               </form>
@@ -99,7 +133,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="\#main" scroll={false}>
+          <Link href="/#main" scroll={false}>
             <div className="rounded-full shadow-lg shadow-black p-4 cursor-pointer hover:scale-125 ease-in duration-300 bg-slate-50">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
