@@ -18,11 +18,10 @@ const Contact = () => {
       ...formData,
       [e.target.id]: e.target.value,
     });
-    console.log(formData);
   }
 
   async function handleSubmit(e) {
-    e.preventDefault(); 
+    e.preventDefault();
     const res = await fetch("/api/mail", {
       method: "POST",
       headers: {
@@ -32,7 +31,21 @@ const Contact = () => {
     });
     const result = await res.json();
     console.log(result);
-    
+    if (result.status === "OK") {
+      alert("Správa bola úspešne odoslaná");
+    } else if (result.status === "ERROR") {
+      alert("Správu sa nepodarilo odoslať");
+    }
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    document.getElementById("contactForm").reset();
+
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -95,9 +108,11 @@ const Contact = () => {
           </div>
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="m-4">
-              <form method="post" id="contactForm" >
+              <form method="post" id="contactForm">
                 <div className="flex flex-col">
-                  <label className="uppercase text-sm py-2" htmlFor="name">Meno</label>
+                  <label className="uppercase text-sm py-2" htmlFor="name">
+                    Meno
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -107,7 +122,9 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" htmlFor="email">Email</label>
+                  <label className="uppercase text-sm py-2" htmlFor="email">
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -116,7 +133,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" htmlFor="message">Správa</label>
+                  <label className="uppercase text-sm py-2" htmlFor="message">
+                    Správa
+                  </label>
                   <textarea
                     type="text"
                     className="border-2 border-gray-300 rounded-lg p-3 "
@@ -125,7 +144,10 @@ const Contact = () => {
                     onInput={handleChange}
                   />
                 </div>
-                <button className="w-full my-4 p-4 text-gray-100 bg-gradient-to-r from-[#5651e5] to-[#709dff]" onClick={handleSubmit} >
+                <button
+                  className="w-full my-4 p-4 text-gray-100 bg-gradient-to-r from-[#5651e5] to-[#709dff]"
+                  onClick={handleSubmit}
+                >
                   Odoslať
                 </button>
               </form>
