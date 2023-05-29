@@ -1,0 +1,17 @@
+{
+  "jawa250": {
+    "name": "Jawa 250",
+    "images": ["jawa250.jpg"],
+    "description": "Jawa 250cc 2 stroke, 1960, 2 owners from new, 12 months MOT, 12 months tboots cover, 12 months cov"
+  },
+  "CZ150": {
+    "name": "CZ 150",
+    "images": ["CZ150.jpg"],
+    "description": "CZ 150cc 2 stroke, 1960, 2 owners from new, 12 months MOT, 12 months tboots cover, 12 months cov"
+  },
+  "jawa350": {
+    "name": "Jawa 350",
+    "images": ["jawa350.jpg"],
+    "description": "Jawa 350cc 2 stroke, 1960, 2 owners from new, 12 months MOT, 12 months tboots cover, 12 months cov"
+  }
+}
