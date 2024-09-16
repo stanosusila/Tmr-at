@@ -79,8 +79,6 @@ const Contact = () => {
                 <div className="font-bold flex flex-col items-center justify-center">
                   <p className="my-1">Kostolná Ves 334</p>
                   <p className="my-1">972 26 Nitrianske Rudno</p>
-                  <p className="my-1">Radovan Trepáč</p>
-                  <p className="my-1">0948 955 389</p>
                 </div>
               </div>
               <div className="mt-auto">
